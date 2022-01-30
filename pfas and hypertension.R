@@ -22,10 +22,6 @@ qc_survfit_full<-qgcomp.cox.boot(survival::Surv(Y, htn) ~ lg_n_pfos+lg_sm_pfos+l
                                  expnms = pfas_names, data=dat_qgcomp, q=3, ewights=weight, MCsize=1000, parallel=TRUE)
 
 qc_survfit_full
-exp(qc_survfit_full$coef)
-exp(qc_survfit_full$ci.coef)
-exp(qc_survfit_full$coef*2)
-exp(qc_survfit_full$ci.coef*2)
 plot(qc_survfit_full)
 qc_survfit_full$fit
 plot(qc_survfit_full)  
