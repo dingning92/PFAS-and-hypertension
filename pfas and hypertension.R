@@ -10,7 +10,7 @@ setwd("~/PFAS and blood pressure")
 
 
 # Read data
-dat_qgcomp<-read.csv("ers.csv")
+dat_qgcomp<-read.csv("data.csv")
 
 
 
